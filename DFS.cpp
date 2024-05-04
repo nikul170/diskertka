@@ -19,14 +19,14 @@
                 points_stack.push(child);
             }
         }
-        for(int i = 0; i < point_count; i++){
-            if (is_visited[i]){
-                points++;
-                edges += graph[i].size();
-            }
-        }
-    }
 
+    }
+     for(int i = 0; i < point_count; i++) {
+         if (is_visited[i]) {
+             points++;
+             edges += graph[i].size();
+         }
+     }
     return points - 1 != edges / 2;
 
 }
